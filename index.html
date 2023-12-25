@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <title>Banaras Studio</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="top-bar">
+            <img src="images/logo.jpg" alt="Banaras Creative Studio Logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+
+    <section id="home">
+        <h1>Banaras Creative Studio</h1>
+    <p>Capturing the Essence of Your Special Moments</p>
+    </section>
+
+
+<section id="about">
+    <h2>Welcome to Banaras Creative Studio</h2>
+    <p>At Banaras Creative Studio, we specialize in creating stunning wedding images and videos that capture the magic and beauty of your special day.
+    Our team of skilled photographers and videographers are dedicated to preserving the joy, love, and emotion of your wedding, ensuring that your memories last a lifetime.</p>
+    <a href="#contact" class="cta-button">Contact Us</a>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+<div class="container">
+    <div class="show">
+
+      <img src="images/img1.JPG" alt="image 1">
+      <img src="images/img2.JPG" alt="image 2">
+      <img src="images/img3.JPG" alt="image 3">
+      <img src="images/img4.JPG" alt="image 4">
+      <img src="images/img5.JPG" alt="image 5">
+      <img src="images/img6.JPG" alt="image 6">
+      <img src="images/img7.JPG" alt="image 7">
+      <img src="images/img8.JPG" alt="image 8">
+      <img src="images/img9.JPG" alt="image 8">
+      <img src="images/img10.JPG" alt="image 8">
+      <img src="images/img11.JPG" alt="image 8">
+      <img src="images/img12.JPG" alt="image 8">
+      <img src="images/img13.JPG" alt="image 8">
+      <img src="images/img14.JPG" alt="image 8">
+      <img src="images/img15.JPG" alt="image 8">
+    
+   
+      </div>
+
+      <div class="hidden">
+        <img src="images/img16.JPG" alt="image 8">
+        <img src="images/img17.JPG" alt="image 8">
+        <img src="images/img18.JPG" alt="image 8">
+        <img src="images/img19.JPG" alt="image 8">
+        <img src="images/img20.JPG" alt="image 8">
+        <img src="images/img21.JPG" alt="image 8">
+        <img src="images/img22.JPG" alt="image 8">
+        <img src="images/img23.JPG" alt="image 8">
+        <img src="images/img24.JPG" alt="image 8">
+      </div>
+
+    </div>
+
+        <a id="load-more-btn" class="cta-button" onclick="loadMoreImages(5);">Load More</a>
+      
+      
+</section>
+<section id="services">
+    <h2>Our Services</h2>
+    
+    <div class="service-container">
+        <div class="service" id="professional">
+            <img src="images/img2.JPG" alt="Service 1 Image">
+            <h3>Professional Wedding Photography</h3>
+        </div>
+        <div class="service" id="Cinematic">
+            <video>
+                <source src="videos/3.mp4" type="video/mp4">
+            </video>
+            <h3>Cinematic Wedding Videography</h3>
+        </div>
+        <div class="service" id="Albums">
+            <img src="images/img4.JPG" alt="Service 3 Image">
+            <h3>Customized Wedding Albums</h3>
+        </div>
+    </div>
+    <div class="service-container">
+        <div class="service" id="preWedding">
+            <img src="images/img5.JPG" alt="Service 4 Image">
+            <h3>Engagement and Pre-Wedding Shoots</h3>
+        </div>
+        <div class="service" id="Drone">
+            <img src="images/img6.JPG" alt="Service 5 Image">
+            <h3>Specialized Drone Coverage</h3>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to capture the magic of your wedding day? Reach out to us for inquiries and bookings.</p>
+
+    <div class="contactForm">
+        <h3>Contact Form</h3>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+    
+            <div class="form-group">
+                <label for="SelectedDate">Event Date:</label>
+                <input type="date" id="SelectedDate" name="event-date" required placeholder="Select event date">
+                <img src="images/calender.png" alt="pickDate" id="eventDate" onclick="selectDate()">
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <a href="mailto:info@weddingmemoriesstudio.com" class="cta-button">Email Us</a>
+</section>
+<footer>
+    &copy; 2023 Banaras Creative Studio. All rights reserved.
+</footer>
+</body>
+</html>
