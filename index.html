@@ -36,7 +36,11 @@
 <section id="about">
     <h2>Welcome to Banaras Creative Studio</h2>
     <p>At Banaras Creative Studio, we specialize in creating stunning wedding images and videos that capture the magic and beauty of your special day.
-    Our team of skilled photographers and videographers are dedicated to preserving the joy, love, and emotion of your wedding, ensuring that your memories last a lifetime.</p>
+    Our team of skilled photographers and videographers are dedicated to preserving the joy, love, and emotion of your wedding, ensuring that your memories last a lifetime.
+    <br></br> <br>  Our team comprises skilled and passionate photographers and videographers who understand the significance of each moment in a wedding. We go beyond the surface, delving 
+   into the emotions, joy, and love that define these moments. It's not just about taking pictures; it's about creating a visual narrative that tells the story of your love,
+    celebration, and the beginning of a new journey.</br>
+</p>
     <a href="#contact" class="cta-button">Contact Us</a>
 </section>
 
@@ -116,42 +120,50 @@
     <h2>Contact Us</h2>
     <p>Ready to capture the magic of your wedding day? Reach out to us for inquiries and bookings.</p>
 
-    <div class="contactForm">
-        <h3>Contact Form</h3>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
+    
+        <div class="contactForm">
+            <h3>Contact Form</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+        
+                <div class="form-group">
+                    <label for="SelectedDate">Event Date:</label>
+                    <input type="date" id="SelectedDate" name="event-date" required placeholder="Select event date">
+                    <img src="images/calender.png" alt="pickDate" id="eventDate" onclick="selectDate()">
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+                </div>
+        
+                <button type="submit">Submit</button>
+            </form>
+          </div>
+        
+           <div class="social-icons">
+               <a href="https://www.facebook.com/" target="_blank" class="social-icon" id="facebook"><img src="images/facebook.png" alt="Facebook"></a>
+               <a href="https://www.youtube.com/" target="_blank" class="social-icon" id="youtube"><img src="images/youtube.png" alt="Youtube"></a>
+               <a href="https://www.instagram.com/" target="_blank" class="social-icon" id="instagram"><img src="images/instagram.png" alt="Instagram"></a>
+               <a href="rudreshpateliiitbh@gmail.com" target="_blank" class="social-icon" id="mail"><img src="images/email.png" alt="Mail"></a>
             </div>
-    
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-            </div>
-    
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
-            </div>
-    
-            <div class="form-group">
-                <label for="SelectedDate">Event Date:</label>
-                <input type="date" id="SelectedDate" name="event-date" required placeholder="Select event date">
-                <img src="images/calender.png" alt="pickDate" id="eventDate" onclick="selectDate()">
-            </div>
-    
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
-            </div>
-    
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    
-    <a href="mailto:info@weddingmemoriesstudio.com" class="cta-button">Email Us</a>
+
 </section>
-<footer>
+
+<<footer>
     &copy; 2023 Banaras Creative Studio. All rights reserved.
 </footer>
 </body>

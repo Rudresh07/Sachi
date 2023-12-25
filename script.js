@@ -29,3 +29,5 @@ function selectDate() {
       document.getElementById('SelectedDate').innerHTML = `Selected date: ${selectedDate}`;
   });
 }
+
+
