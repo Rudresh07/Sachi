@@ -33,6 +33,11 @@ nav a {
     color: #fff;
     font-weight: bold;
 }
+h2{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
 
 #gallery {
     text-align: center;
@@ -57,6 +62,7 @@ nav a {
 }
 
 .cta-button {
+    margin-top: 20px;
     display: inline-block;
     padding: 18px 37.5px;
     background-color: #ea4c89;
@@ -111,6 +117,11 @@ nav a {
 #lightbox .close:hover,
 #lightbox .close:focus {
     color: #bbb;
+}
+.instagram-link{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50%;
 }
 
 @media screen and (max-width: 600px) {
