@@ -1,16 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>Banaras Studio</title>
 </head>
+
 <body>
-    <header id="main-header">
+    <!-- <header id="main-header">
         <div class="top-bar">
             <img src="images/logo.jpg" alt="Banaras Creative Studio Logo">
             <nav>
@@ -23,148 +26,98 @@
                 </ul>
             </nav>
         </div>
-        
-    </header>
-    
 
-    <section id="home">
-        <h1>Banaras Creative Studio</h1>
-    <p>Capturing the Essence of Your Special Moments</p>
-    </section>
+    </header> -->
 
 
-<section id="about">
-    <h2>Welcome to Banaras Creative Studio</h2>
-    <p>At Banaras Creative Studio, we specialize in creating stunning wedding images and videos that capture the magic and beauty of your special day.
-    Our team of skilled photographers and videographers are dedicated to preserving the joy, love, and emotion of your wedding, ensuring that your memories last a lifetime.
-    <br></br> <br>  Our team comprises skilled and passionate photographers and videographers who understand the significance of each moment in a wedding. We go beyond the surface, delving 
-   into the emotions, joy, and love that define these moments. It's not just about taking pictures; it's about creating a visual narrative that tells the story of your love,
-    celebration, and the beginning of a new journey.</br>
-</p>
-    <a href="#contact" class="cta-button">Contact Us</a>
-</section>
-
-<section id="gallery">
-    <h2>Gallery</h2>
-<div class="container">
-    <div class="show">
-
-      <img src="images/img1.JPG" alt="image 1">
-      <img src="images/img2.JPG" alt="image 2">
-      <img src="images/img3.JPG" alt="image 3">
-      <img src="images/img4.JPG" alt="image 4">
-      <img src="images/img5.JPG" alt="image 5">
-      <img src="images/img6.JPG" alt="image 6">
-      <img src="images/img7.JPG" alt="image 7">
-      <img src="images/img8.JPG" alt="image 8">
-      <img src="images/img9.JPG" alt="image 8">
-      <img src="images/img10.JPG" alt="image 8">
-      <img src="images/img11.JPG" alt="image 8">
-      <img src="images/img12.JPG" alt="image 8">
-      <img src="images/img13.JPG" alt="image 8">
-      <img src="images/img14.JPG" alt="image 8">
-      <img src="images/img15.JPG" alt="image 8">
-    
-   
-      </div>
-
-      <div class="hidden">
-        <img src="images/img16.JPG" alt="image 8">
-        <img src="images/img17.JPG" alt="image 8">
-        <img src="images/img18.JPG" alt="image 8">
-        <img src="images/img19.JPG" alt="image 8">
-        <img src="images/img20.JPG" alt="image 8">
-        <img src="images/img21.JPG" alt="image 8">
-        <img src="images/img22.JPG" alt="image 8">
-        <img src="images/img23.JPG" alt="image 8">
-        <img src="images/img24.JPG" alt="image 8">
-      </div>
-
-    </div>
-
-        <a id="load-more-btn" class="cta-button" onclick="loadMoreImages(5);">Load More</a>
-      
-      
-</section>
-<section id="services">
-    <h2>Our Services</h2>
-    
-    <div class="service-container">
-        <div class="service" id="professional">
-            <img src="images/img2.JPG" alt="Service 1 Image">
-            <h3>Professional Wedding Photography</h3>
-        </div>
-        <div class="service" id="Cinematic">
-            <video>
-                <source src="videos/3.mp4" type="video/mp4">
-            </video>
-            <h3>Cinematic Wedding Videography</h3>
-        </div>
-        <div class="service" id="Albums">
-            <img src="images/img4.JPG" alt="Service 3 Image">
-            <h3>Customized Wedding Albums</h3>
-        </div>
-    </div>
-    <div class="service-container">
-        <div class="service" id="preWedding">
-            <img src="images/img5.JPG" alt="Service 4 Image">
-            <h3>Engagement and Pre-Wedding Shoots</h3>
-        </div>
-        <div class="service" id="Drone">
-            <img src="images/img6.JPG" alt="Service 5 Image">
-            <h3>Specialized Drone Coverage</h3>
-        </div>
-    </div>
-</section>
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Ready to capture the magic of your wedding day? Reach out to us for inquiries and bookings.</p>
 
     
-        <div class="contactForm">
-            <h3>Contact Form</h3>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name">
-                </div>
-        
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
-                </div>
-        
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
-                </div>
-        
-                <div class="form-group">
-                    <label for="SelectedDate">Event Date:</label>
-                    <input type="date" id="SelectedDate" name="event-date" required placeholder="Select event date">
-                    <img src="images/calender.png" alt="pickDate" id="eventDate" onclick="selectDate()">
-                </div>
-        
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
-                </div>
-        
-                <button type="submit">Submit</button>
-            </form>
-          </div>
-        
-           <div class="social-icons">
-               <a href="https://www.facebook.com/" target="_blank" class="social-icon" id="facebook"><img src="images/facebook.png" alt="Facebook"></a>
-               <a href="https://www.youtube.com/" target="_blank" class="social-icon" id="youtube"><img src="images/youtube.png" alt="Youtube"></a>
-               <a href="https://www.instagram.com/" target="_blank" class="social-icon" id="instagram"><img src="images/instagram.png" alt="Instagram"></a>
-               <a href="rudreshpateliiitbh@gmail.com" target="_blank" class="social-icon" id="mail"><img src="images/email.png" alt="Mail"></a>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="container">
+            <div class="show">
+
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.12.jpeg" alt="image 1">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.14.jpeg" alt="image 2">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.15.jpeg" alt="image 3">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.16 (1).jpeg" alt="image 4">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.16.jpeg" alt="image 5">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.17 (1).jpeg" alt="image 6">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.17.jpeg" alt="image 7">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.18 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.18.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.19 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.19.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.20.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.20 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.21 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.21.jpeg" alt="image 8">
+
+
             </div>
 
-</section>
+            <div class="hidden">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.22 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.22 (2).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.22.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.23.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.24 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.24 (2).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.24.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.25 (1).jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.30.jpeg" alt="image 8">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.25.jpeg" alt="image 25">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.30.jpeg" alt="image 26">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.35.jpeg" alt="image 27">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.38.jpeg" alt="image 28">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.36.jpeg" alt="image 29">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.31.jpeg" alt="image30">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.40.jpeg" alt="image 31">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.42.jpeg" alt="image 32">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.43.jpeg" alt="image 33">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.45 (1).jpeg" alt="image 34">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.45.jpeg" alt="image 35">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.49.jpeg" alt="image 36">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.50.jpeg" alt="image 37">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.51 (1).jpeg" alt="image 38">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.51.jpeg" alt="image 39">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.52 (1).jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.52.jpeg" alt="image 41">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.53 (1).jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.53.jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.54 (1).jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.54.jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.55 (1).jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.55.jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.56 (1).jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.56.jpeg" alt="image 40">
+                <img src="images/WhatsApp Image 2024-06-01 at 16.29.57.jpeg" alt="image 40">
+            </div>
 
-<<footer>
-    &copy; 2023 Banaras Creative Studio. All rights reserved.
-</footer>
+        </div>
+
+        <a id="load-more-btn" class="cta-button" onclick="loadMoreImages(5);">Load More</a>
+
+
+    </section>
+
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-image" alt="Lightbox Image">
+    </div>
+    
+   
+
+    <<footer>
+        &copy; 2023 Banaras Creative Studio. All rights reserved.
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+           
+
 </body>
+
 </html>

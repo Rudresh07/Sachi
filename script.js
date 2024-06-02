@@ -15,19 +15,28 @@ function loadMoreImages(numImages) {
   }
 }
 
-function selectDate() {
-  // Get the date input element
-  const dateInput = document.getElementById("SelectedDate");
 
-  // Set the min attribute to today's date
-  const today = new Date().toISOString().split('T')[0];
-  dateInput.setAttribute('min', today);
 
-  // Listen for the change event on the date input
-  dateInput.addEventListener('change', (event) => {
-      const selectedDate = event.target.value;
-      document.getElementById('SelectedDate').innerHTML = `Selected date: ${selectedDate}`;
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll("#gallery img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+
+  images.forEach(image => {
+      image.addEventListener("click", function() {
+          lightbox.style.display = "block";
+          lightboxImage.src = this.src;
+      });
   });
-}
 
+  document.querySelector(".close").addEventListener("click", function() {
+      lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", function(event) {
+      if (event.target !== lightboxImage) {
+          lightbox.style.display = "none";
+      }
+  });
+});
 
